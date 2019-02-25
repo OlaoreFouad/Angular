@@ -1,0 +1,16 @@
+<div class="row container">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">{{ patient.fname }} {{ patient.lname }}</div>
+      <div class="panel-body">
+        {{ patient.ailment }}
+        <br><br>
+        <button class="btn btn-success" (click)="onSetAs('Malaria')">Set as 'Malaria'</button> 
+        <button class="btn btn-danger" (click)="onSetAs('Typhoid')">Set as 'Typhoid'</button> 
+        <button class="btn btn-primary" (click)="onSetAs('Cholera')">Set as 'Cholera'</button> 
+        <button class="btn btn-primary" (click)="onSetAs('Dysentry')">Set as 'Dysentry'</button> 
+        <button class="btn btn-primary" (click)="onSetAs('None')">Set as 'None'</button>
+      </div>
+    </div>
+  </div>
+</div>
