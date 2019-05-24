@@ -7,10 +7,14 @@
                 <a class="nav-link"  routerLink="">Home</a>
               </li>
               <li role="presentation" routerLinkActive="active">
-                <a class="nav-link"  [routerLink]="['/user', 1]">User 1</a>
+                <a class="nav-link"  [routerLink]="['/user', 1]">User 1
+                  <span *ngIf="user1Activated" >activated</span>
+                </a>
               </li>
               <li role="presentation" routerLinkActive="active">
-                <a class="nav-link"  [routerLink]="['/user', 2]">User 2</a>
+                <a class="nav-link"  [routerLink]="['/user', 2]">User 2
+                  <span *ngIf="user2Activated" >activated</span>
+                </a>
               </li>
             </ul>
       </div>
